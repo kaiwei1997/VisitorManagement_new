@@ -4,19 +4,115 @@
 	<info
 		organisation="default"
 		module="visitormanagement$sources_2.12"
-		revision="0.1"
+		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171105221832"/>
+		date="20180627032509"/>
 	<dependencies>
-		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.12.3" status="release" pubdate="20170725064730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
-				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2642" time="0" location="C:\Users\JoshTan\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.3.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/JoshTan/.sbt/preloaded/org.scala-lang/scala-library/2.12.3/ivys/ivy.xml"/>
-				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="0.1" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/"/>
+		<module organisation="org.apache.commons" name="commons-email">
+			<revision name="1.5" status="release" pubdate="20170729220320" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-email/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12995" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.apache.commons\commons-email\ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.5/commons-email-1.5.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="990602" time="0" location="C:\Users\JoshTan\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.12.3-sources.jar">
+					<artifact name="commons-email" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62954" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.apache.commons\commons-email\srcs\commons-email-1.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.5/commons-email-1.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.mail" name="javax.mail">
+			<revision name="1.6.1" status="release" pubdate="20180210075056" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+				<license name="CDDL/GPLv2+CE" url="https://javaee.github.io/javamail/LICENSE"/>
+				<metadata-artifact status="no" details="" size="7352" time="0" location="C:\Users\kaiwe\.ivy2\cache\com.sun.mail\javax.mail\ivy-1.6.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.1/javax.mail-1.6.1.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.mail" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1278369" time="0" location="C:\Users\kaiwe\.ivy2\cache\com.sun.mail\javax.mail\srcs\javax.mail-1.6.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.1/javax.mail-1.6.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jfoenix" name="jfoenix">
+			<revision name="8.0.1" status="release" pubdate="20180108220323" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jfoenix.com/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2483" time="0" location="C:\Users\kaiwe\.ivy2\cache\com.jfoenix\jfoenix\ivy-8.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jfoenix/jfoenix/8.0.1/jfoenix-8.0.1.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="8.0.1" rev-constraint-default="8.0.1" rev-constraint-dynamic="8.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jfoenix" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1840163" time="1599" location="C:\Users\kaiwe\.ivy2\cache\com.jfoenix\jfoenix\srcs\jfoenix-8.0.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jfoenix/jfoenix/8.0.1/jfoenix-8.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalafx" name="scalafxml-core-sfx8_2.12">
+			<revision name="0.4" status="release" pubdate="20170620172418" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/vigoo/scalafxml" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3146" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scalafx\scalafxml-core-sfx8_2.12\ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafxml-core-sfx8_2.12/0.4/scalafxml-core-sfx8_2.12-0.4.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalafxml-core-sfx8_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3534" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scalafx\scalafxml-core-sfx8_2.12\srcs\scalafxml-core-sfx8_2.12-0.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalafx/scalafxml-core-sfx8_2.12/0.4/scalafxml-core-sfx8_2.12-0.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalafx" name="scalafxml-core-macros-sfx8_2.12">
+			<revision name="0.4" status="release" pubdate="20170620172257" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/vigoo/scalafxml" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3143" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scalafx\scalafxml-core-macros-sfx8_2.12\ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafxml-core-macros-sfx8_2.12/0.4/scalafxml-core-macros-sfx8_2.12-0.4.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalafxml-core-macros-sfx8_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3810" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scalafx\scalafxml-core-macros-sfx8_2.12\srcs\scalafxml-core-macros-sfx8_2.12-0.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalafx/scalafxml-core-macros-sfx8_2.12/0.4/scalafxml-core-macros-sfx8_2.12-0.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalafx" name="scalafx_2.12">
+			<revision name="8.0.144-R12" status="release" pubdate="20171015095254" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalafx.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="2">
+				<license name="BSD" url="https://github.com/scalafx/scalafx/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3071" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scalafx\scalafx_2.12\ivy-8.0.144-R12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.12/8.0.144-R12/scalafx_2.12-8.0.144-R12.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="8.0.144-R12" rev-constraint-default="8.0.144-R12" rev-constraint-dynamic="8.0.144-R12" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalafx_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="989566" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scalafx\scalafx_2.12\srcs\scalafx_2.12-8.0.144-R12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.12/8.0.144-R12/scalafx_2.12-8.0.144-R12-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.3" status="release" pubdate="20170725184444" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="577394" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.12.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.3" status="release" pubdate="20170725184730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.3" rev-constraint-default="2.12.3" rev-constraint-dynamic="2.12.3" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.12.3/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="990602" time="0" location="C:\Users\kaiwe\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.12.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.activation" name="activation">
+			<revision name="1.1" status="release" pubdate="20060503074829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/javabeans/jaf/index.jsp" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="Common Development and Distribution License (CDDL) v1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="2874" time="0" location="C:\Users\kaiwe\.ivy2\cache\javax.activation\activation\ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.pom"/>
+				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="activation" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63338" time="0" location="C:\Users\kaiwe\.ivy2\cache\javax.activation\activation\srcs\activation-1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

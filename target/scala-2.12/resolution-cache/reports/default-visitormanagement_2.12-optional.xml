@@ -4,10 +4,10 @@
 	<info
 		organisation="default"
 		module="visitormanagement_2.12"
-		revision="0.1"
+		revision="1.0"
 		conf="optional"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171105221832"/>
+		date="20180627032503"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

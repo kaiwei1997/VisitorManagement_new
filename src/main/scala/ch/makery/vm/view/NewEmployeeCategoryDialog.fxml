@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0"
+            prefWidth="291.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ch.makery.vm.NewEmployeeCategoryDialogController">
+    <children>
+        <Label layoutX="14.0" layoutY="25.0" text="Category:"/>
+        <TextField fx:id="eCategoryTxt" layoutX="76.0" layoutY="21.0"/>
+        <Button fx:id="addBtn" layoutX="237.0" layoutY="21.0" mnemonicParsing="false" onAction="#saveEmployeeCategory"
+                text="Add"/>
+    </children>
+</AnchorPane>

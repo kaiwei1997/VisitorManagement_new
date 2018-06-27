@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="373.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.vm.EmployeeOverviewController">
+    <children>
+        <SplitPane dividerPositions="0.31" prefHeight="682.0" prefWidth="941.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TableView fx:id="employeeTable" prefHeight="682.0" prefWidth="308.0">
+                            <columns>
+                                <TableColumn fx:id="eidColumn" minWidth="6.399993717670441" prefWidth="55.199983179569244" text="ID" />
+                                <TableColumn fx:id="eFirstNameColumn" prefWidth="102.40001678466797" text="First Name" />
+                                <TableColumn fx:id="eLastNameColumn" prefWidth="130.40005493164062" text="Last Name" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Employee Information">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="34.0" prefHeight="108.0" prefWidth="618.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.00001220703126" minWidth="10.0" prefWidth="102.00003662109376" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.80004882812497" minWidth="10.0" prefWidth="210.79996337890626" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.79995117187502" minWidth="10.0" prefWidth="95.99996337890627" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.6000366210938" minWidth="10.0" prefWidth="196.00000000000006" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="First Name" />
+                                <Label prefHeight="18.0" prefWidth="130.0" text="Employee Number" GridPane.rowIndex="2" />
+                                <Label text="Category" GridPane.rowIndex="3" />
+                                <Label alignment="CENTER_RIGHT" text="Last Name" GridPane.columnIndex="2">
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="Department" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="D.O.B" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="5.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <Label fx:id="eFirstNameLbl" prefHeight="18.0" prefWidth="211.0" GridPane.columnIndex="1" />
+                                <Label fx:id="eEmployeeNumberLbl" prefHeight="18.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label fx:id="eDOBLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Label fx:id="eCategoryLbl" layoutX="116.0" layoutY="69.0" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Label fx:id="eLastNameLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="3" />
+                                <Label fx:id="departmentLbl" prefHeight="18.0" prefWidth="202.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Label text="NRIC/Passport No" GridPane.rowIndex="1" />
+                                <Label fx:id="eNRICLbl" prefHeight="18.0" prefWidth="220.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            </children>
+                        </GridPane>
+                        <Label layoutX="14.0" layoutY="149.0" text="Employee Contact">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="169.0" prefHeight="156.0" prefWidth="618.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.39996337890625" minWidth="10.0" prefWidth="101.79998779296875" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="216.40001220703127" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.79998779296875" minWidth="10.0" prefWidth="101.80000000000001" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.2000122070313" minWidth="10.0" prefWidth="196.2" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Street Address" />
+                                <Label text="City" GridPane.rowIndex="1" />
+                                <Label text="State" GridPane.rowIndex="2" />
+                                <Label text="Cell Phone No" GridPane.columnIndex="2">
+                                    <opaqueInsets>
+                                        <Insets left="5.0" />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="Work Phone No" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label text="Country" GridPane.rowIndex="4" />
+                                <Label layoutX="10.0" layoutY="142.0" text="Postal Code" GridPane.rowIndex="3" />
+                                <Label fx:id="eStreetAddressLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="1" />
+                                <Label fx:id="eCityLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label fx:id="eStateLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label fx:id="ePostalLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Label fx:id="eCountryLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <Label fx:id="eCellPhoneLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="3" />
+                                <Label fx:id="eWorkPhoneLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Label text="Email" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <padding>
+                                        <Insets left="5.0" />
+                                    </padding>
+                                </Label>
+                                <Label fx:id="eEmailLbl" prefHeight="18.0" prefWidth="217.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                            </children>
+                        </GridPane>
+                        <HBox layoutX="467.0" layoutY="332.0" prefHeight="20.0" prefWidth="162.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#handleNewEmployee" text="New..." />
+                                <Button mnemonicParsing="false" onAction="#handleEditEmployee" text="Edit...">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#handleDeleteEmployee" text="Delete">
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="7.0" layoutY="334.0" prefHeight="26.0" prefWidth="97.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

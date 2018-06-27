@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0"
+            prefWidth="609.0" style="-fx-background-color: #2D3441;" xmlns="http://javafx.com/javafx/9.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.vm.LoginController">
+    <children>
+        <ImageView fitHeight="106.0" fitWidth="93.0" layoutX="258.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Image/Logo.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="152.0" layoutY="107.0" text="Visitor" textFill="#2196f3">
+            <font>
+                <Font name="Book Antiqua" size="26.0"/>
+            </font>
+        </Label>
+        <Label layoutX="238.0" layoutY="107.0" text="Management" textFill="WHITE">
+            <font>
+                <Font name="Book Antiqua" size="26.0"/>
+            </font>
+        </Label>
+        <Label layoutX="397.0" layoutY="107.0" text="System" textFill="#fad61e">
+            <font>
+                <Font name="Book Antiqua" size="26.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="textEmployeeID" layoutX="211.0" layoutY="165.0" prefHeight="30.0" prefWidth="263.0"
+                   promptText="Employee ID" style="-fx-background-color: white;">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <PasswordField fx:id="textPass" layoutX="211.0" layoutY="215.0" prefHeight="26.0" prefWidth="263.0"
+                       promptText="Password">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </PasswordField>
+        <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="176.0" layoutY="165.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Image/User.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="176.0" layoutY="215.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Image/Password.png"/>
+            </image>
+        </ImageView>
+        <HBox layoutX="391.0" layoutY="256.0" prefHeight="30.0" prefWidth="83.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="19.0" prefWidth="83.0"
+                        style="-fx-background-color: #2196f3#00c5ff;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="Bell MT" size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
