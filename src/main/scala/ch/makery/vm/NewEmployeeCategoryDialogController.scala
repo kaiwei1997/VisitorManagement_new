@@ -57,7 +57,7 @@ class NewEmployeeCategoryDialogController(
 
       okClicked = true
 
-      val query: String = "INSERT INTO EMPLOYEE_CATEGORY (CATID, CATNAME) VALUES (EMPLOYEE_CATEGORY_CATID_SEQ.NEXTVAL,?)"
+      val query: String = "INSERT INTO EMPLOYEE_CATEGORY (CATID, CATNAME) VALUES (EMPLOYEECAT_SEQ.NEXTVAL,?)"
       var preparedStatement: PreparedStatement = null
 
       try {

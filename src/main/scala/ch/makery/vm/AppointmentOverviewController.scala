@@ -293,7 +293,7 @@ class AppointmentOverviewController(
           headerText = "Failed"
           contentText = "Not Check In Yet"
         }.showAndWait()
-      } else if (!checkOutDateTimeLbl.text.value.isEmpty) {
+      } else if (checkOutDateTimeLbl.text.getValue != null) {
         val alert = new Alert(Alert.AlertType.Error) {
           title = "Failed"
           headerText = "Already check out"

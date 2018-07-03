@@ -303,7 +303,7 @@ class EditorController(
     if(!result.get.isEmpty){
       try{
         preparedStatement = connection.prepareStatement(
-          "INSERT INTO EMPLOYEE_CATEGORY(CATID,CATNAME) VALUES (EMPLOYEE_CATEGORY_CATID_SEQ.NEXTVAL,?)"
+          "INSERT INTO EMPLOYEE_CATEGORY(CATID,CATNAME) VALUES (EMPLOYEECAT_SEQ.NEXTVAL,?)"
         )
         preparedStatement.setString(1,dialog.get)
       }catch {
@@ -315,8 +315,8 @@ class EditorController(
           headerText = "Add"
           contentText = "Cateory successfully added"
         }.showAndWait()
-        eDepartment.clear()
-        eDeptTbl.items().removeAll()
+        eCategory.clear()
+        eCatTbl.items().removeAll()
         fillCategoryTable()
       }
     }
