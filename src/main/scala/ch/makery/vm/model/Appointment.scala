@@ -5,15 +5,14 @@ import java.time.LocalDateTime
 
 import scalafx.beans.property.{ObjectProperty, StringProperty}
 
-  class Appointment(aIDS: String, aVIDs: Int, aEIDs: Int, aReasons: String, appointmentDateTimes: LocalDateTime,
-                  aCheckInDateTimes: LocalDateTime, aCheckOutDateTimes: LocalDateTime, aCategorys: String) {
+  class Appointment(aIDS: String, aReasons: String, appointmentDateTimes: LocalDateTime, checkInDateTimeS: LocalDateTime,checkOutDateTimeS: LocalDateTime, aCategorys: String) {
 
   var aID = StringProperty(aIDS)
-  var aVID = ObjectProperty[Int](aVIDs)
-  var aEID = ObjectProperty[Int](aEIDs)
+  var aVID = new ObjectProperty[Int]()
+  var aEID = new ObjectProperty[Int]()
   var aReason = StringProperty(aReasons)
   var appointmentDateTime = ObjectProperty[LocalDateTime](appointmentDateTimes)
-  var checkInDateTime = ObjectProperty[LocalDateTime](aCheckInDateTimes)
-  var checkOutDateTime = ObjectProperty[LocalDateTime](aCheckOutDateTimes)
+  var checkInDateTime = ObjectProperty[LocalDateTime](checkInDateTimeS)
+  var checkOutDateTime = ObjectProperty[LocalDateTime](checkOutDateTimeS)
   var aCategory = StringProperty(aCategorys)
 }

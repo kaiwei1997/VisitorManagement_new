@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180627032509"/>
+		date="20180702141840"/>
 	<dependencies>
 		<module organisation="org.apache.commons" name="commons-email">
 			<revision name="1.5" status="release" pubdate="20170729220320" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-email/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
@@ -39,7 +39,7 @@
 				<metadata-artifact status="no" details="" size="2483" time="0" location="C:\Users\kaiwe\.ivy2\cache\com.jfoenix\jfoenix\ivy-8.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jfoenix/jfoenix/8.0.1/jfoenix-8.0.1.pom"/>
 				<caller organisation="default" name="visitormanagement$sources_2.12" conf="compile-internal, compile, provided, optional" rev="8.0.1" rev-constraint-default="8.0.1" rev-constraint-dynamic="8.0.1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="jfoenix" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1840163" time="1599" location="C:\Users\kaiwe\.ivy2\cache\com.jfoenix\jfoenix\srcs\jfoenix-8.0.1-sources.jar">
+					<artifact name="jfoenix" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1840163" time="0" location="C:\Users\kaiwe\.ivy2\cache\com.jfoenix\jfoenix\srcs\jfoenix-8.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jfoenix/jfoenix/8.0.1/jfoenix-8.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>

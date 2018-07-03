@@ -12,7 +12,8 @@ import scalafx.collections.ObservableBuffer
 import scalafx.scene.control._
 import scalafx.stage.Stage
 import scalafxml.core.macros.sfxml
-import com.jfoenix.controls.{JFXDatePicker, JFXTimePicker}
+import com.jfoenix.controls.JFXTimePicker
+import com.jfoenix.controls.JFXDatePicker
 import com.sun.mail.util.MailConnectException
 import org.apache.commons.mail.{DefaultAuthenticator, Email, SimpleEmail}
 

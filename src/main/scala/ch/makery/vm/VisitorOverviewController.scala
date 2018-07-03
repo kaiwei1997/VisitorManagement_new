@@ -1,11 +1,11 @@
 package ch.makery.vm
 
 import java.sql.{Connection, PreparedStatement, ResultSet, SQLException}
+import java.time.LocalDateTime
 
 import ch.makery.vm.model.{Appointment, AppointmentDetail, Visitor}
 import ch.makery.vm.util.ConnectionUtil
 import ch.makery.vm.util.DateTimeUtil._
-
 import scalafx.collections.ObservableBuffer
 import scalafx.event.ActionEvent
 import scalafx.scene.control.{Alert, Label, TableColumn, TableView}
@@ -36,9 +36,9 @@ class VisitorOverviewController(
                                  private val ah_categoryColumn: TableColumn[AppointmentDetail, String],
                                  private val ah_employeeColumn: TableColumn[AppointmentDetail, String],
                                  private val ah_reasonColumn: TableColumn[AppointmentDetail, String],
-                                 private val ah_appointDateTimeColumn: TableColumn[AppointmentDetail, String],
-                                 private val ah_checkInDateTimeColumn: TableColumn[AppointmentDetail, String],
-                                 private val ah_checkOutDateTimeColumn: TableColumn[AppointmentDetail, String],
+                                 private val ah_appointDateTimeColumn: TableColumn[AppointmentDetail, LocalDateTime],
+                                 private val ah_checkInDateTimeColumn: TableColumn[AppointmentDetail, LocalDateTime],
+                                 private val ah_checkOutDateTimeColumn: TableColumn[AppointmentDetail, LocalDateTime],
                                ) {
   val visitorData = new ObservableBuffer[Visitor]()
 

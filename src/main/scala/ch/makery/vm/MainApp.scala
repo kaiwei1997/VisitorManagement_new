@@ -6,9 +6,7 @@ import scalafx.scene.Scene
 import scalafx.Includes._
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import javafx.{scene => jfxs}
-
 import ch.makery.vm.model._
-
 import scalafx.scene.image.Image
 import scalafx.stage.{Modality, Stage}
 

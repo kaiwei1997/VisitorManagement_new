@@ -14,7 +14,7 @@ addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.fu
 libraryDependencies ++= Seq(
   "org.scalafx" % "scalafxml-core-sfx8_2.12" % "0.4",
   "org.scalafx" % "scalafx_2.12" % "8.0.144-R12",
-  "com.jfoenix" % "jfoenix" % "8.0.1",
+  "com.jfoenix" % "jfoenix" % "9.0.0",
   "com.sun.mail" % "javax.mail" % "1.6.1",
   "org.apache.commons" % "commons-email" % "1.5"
 )

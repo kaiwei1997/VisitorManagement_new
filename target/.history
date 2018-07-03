@@ -19,3 +19,10 @@ all {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/product
 ;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/kaiwe/AppData/Local/Temp/sbt-structure.xml; session clear-all
 all {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/products {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/test:products
 ;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/kaiwe/AppData/Local/Temp/sbt-structure.xml; session clear-all
+all {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/products {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/test:products
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/kaiwe/AppData/Local/Temp/sbt-structure1.xml; session clear-all
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/kaiwe/AppData/Local/Temp/sbt-structure.xml; session clear-all
+all {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/products {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/test:products
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/kaiwe/AppData/Local/Temp/sbt-structure.xml; session clear-all
+all {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/products {file:/D:/Users/JoshTan/Desktop/VisitorManagement/}visitormanagement/test:products
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers resolveSbtClassifiers" ;*/*:dumpStructureTo C:/Users/kaiwe/AppData/Local/Temp/sbt-structure.xml; session clear-all

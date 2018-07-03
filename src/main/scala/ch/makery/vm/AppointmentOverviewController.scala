@@ -26,9 +26,9 @@ class AppointmentOverviewController(
                                      private val employeeColumn: TableColumn[AppointmentDetail, String],
                                      private val employeeEmailColumn: TableColumn[AppointmentDetail,String],
                                      private val reasonColumn: TableColumn[AppointmentDetail, String],
-                                     private val appointDateTimeColumn: TableColumn[AppointmentDetail, String],
-                                     private val checkInDateTimeColumn: TableColumn[AppointmentDetail, String],
-                                     private val checkOutDateTimeColumn: TableColumn[AppointmentDetail, String],
+                                     private val appointDateTimeColumn: TableColumn[AppointmentDetail, LocalDateTime],
+                                     private val checkInDateTimeColumn: TableColumn[AppointmentDetail, LocalDateTime],
+                                     private val checkOutDateTimeColumn: TableColumn[AppointmentDetail, LocalDateTime],
                                      private val emailColumn: TableColumn[AppointmentDetail, String],
 
                                      private val aIdLbl: Label,
@@ -46,7 +46,7 @@ class AppointmentOverviewController(
                                      private val search_Field: TextField
                                    ) {
   val appointmentData = new ObservableBuffer[AppointmentDetail]()
-  val newAppoinment = new ObservableBuffer[Appointment]()
+  val newAppointment = new ObservableBuffer[Appointment]()
 
   var connection: Connection = null
   var rs: ResultSet = null
@@ -129,10 +129,10 @@ class AppointmentOverviewController(
   def handleNewAppointment(action: ActionEvent): Unit = {
     val chars = ('a' to 'z') ++ ('A' to 'Z') ++ ('0' to '9')
     val rID = randomStringFromCharList(8, chars)
-    val appointment = new Appointment(rID, 0, 0, "", LocalDateTime.now(), null, null, "")
+    val appointment = new Appointment(rID, null, LocalDateTime.now(), null,null,null)
     val okClicked = MainApp.showNewAppointmentDialog(appointment)
     if (okClicked) {
-      newAppoinment += appointment
+      newAppointment += appointment
     }
   }
 
@@ -155,9 +155,9 @@ class AppointmentOverviewController(
         categoryLbl.text <== appointmentDetail.aCategory
         employeeLbl.text <== appointmentDetail.eFNName
         reasonLbl.text <== appointmentDetail.aReason
-        appointDateTimeLbl.text = appointmentDetail.appointmentDateTime.value
-        checkInDateTimeLbl.text = appointmentDetail.checkInDateTime.value
-        checkOutDateTimeLbl.text = appointmentDetail.checkOutDateTime.value
+        appointDateTimeLbl.text = appointmentDetail.appointmentDateTime.value.asString
+        checkInDateTimeLbl.text = appointmentDetail.checkInDateTime.value.asString
+        checkOutDateTimeLbl.text = appointmentDetail.checkOutDateTime.value.asString
 
       case None =>
         aIdLbl.text = ""
