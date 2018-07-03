@@ -180,7 +180,7 @@ class AppointmentOverviewController(
     val selectedIndex = appointmentTable.selectionModel().selectedIndex.value
 
     if(selectedIndex >=0) {
-      if (checkInDateTimeLbl.text.value.isEmpty) {
+      if (checkInDateTimeLbl.text.getValue == null) {
         if (duration > 15) {
           val alert = new Alert(Alert.AlertType.Error) {
             title = "Failed"
@@ -287,7 +287,7 @@ class AppointmentOverviewController(
   def handleCheckOut(): Unit = {
     val selectedIndex = appointmentTable.selectionModel().selectedIndex.value
     if(selectedIndex >=0) {
-      if (checkInDateTimeLbl.text.value.isEmpty) {
+      if (checkInDateTimeLbl.text.getValue == null) {
         val alert = new Alert(Alert.AlertType.Error) {
           title = "Failed"
           headerText = "Failed"

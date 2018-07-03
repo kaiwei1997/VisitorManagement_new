@@ -6232,7 +6232,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 805ms :: artifacts dl 34ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 620ms :: artifacts dl 32ms[0m
 [0m[[0mdebug[0m] [0m	report for default#visitormanagement-build;0.1-SNAPSHOT compile produced in D:\Users\JoshTan\Desktop\VisitorManagement\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-visitormanagement-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#visitormanagement-build;0.1-SNAPSHOT runtime produced in D:\Users\JoshTan\Desktop\VisitorManagement\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-visitormanagement-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#visitormanagement-build;0.1-SNAPSHOT test produced in D:\Users\JoshTan\Desktop\VisitorManagement\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-visitormanagement-build-test.xml[0m
@@ -6246,5 +6246,5 @@
 [0m[[0mdebug[0m] [0m	report for default#visitormanagement-build;0.1-SNAPSHOT docs produced in D:\Users\JoshTan\Desktop\VisitorManagement\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-visitormanagement-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#visitormanagement-build;0.1-SNAPSHOT pom produced in D:\Users\JoshTan\Desktop\VisitorManagement\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-visitormanagement-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#visitormanagement-build;0.1-SNAPSHOT scala-tool produced in D:\Users\JoshTan\Desktop\VisitorManagement\project\target\scala-2.10\sbt-0.13\resolution-cache\reports\default-visitormanagement-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (805ms resolve - 34ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (620ms resolve - 32ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
