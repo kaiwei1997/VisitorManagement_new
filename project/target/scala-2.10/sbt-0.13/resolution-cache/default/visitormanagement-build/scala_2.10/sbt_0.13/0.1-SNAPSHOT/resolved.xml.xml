@@ -4,7 +4,7 @@
 		module="visitormanagement-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20180702141832"
+		publication="20180703170812"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

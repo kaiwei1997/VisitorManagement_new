@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="visitormanagement_1361" />
+    <profile name="sbt 1" modules="visitormanagement_2443" />
     <profile name="sbt 2" modules="visitormanagement">
       <plugins>
         <plugin path="C:\Users\kaiwe\.ivy2\cache\org.scalamacros\paradise_2.12.3\jars\paradise_2.12.3-2.1.0.jar" />
